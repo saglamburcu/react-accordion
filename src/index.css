@@ -1,13 +1,78 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4b145b;
+}
+
+.questions-container {
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  background-color: rgb(247, 246, 246);
+  box-shadow: -2px 4px 13px 4px rgba(0,0,0,0.30);
+}
+
+.title {
+  width: 25%;
+  padding: 40px;
+}
+
+.title h1 {
+  font-size: 30px;
+  color: #5d3f66;
+}
+
+.questions-list {
+  padding: 40px;
+  width: 70%;
+}
+
+.question {
+  width: 100%;
+  min-height: 60px;
+  border-radius: 5px;
+  border: 2px solid rgb(190, 190, 190);
+  box-shadow: -2px 4px 13px 4px rgba(0,0,0,0.10);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.question:last-child {
+  margin-bottom: 0;
+}
+
+.QA {
+  padding: 20px;
+}
+
+.QA h3 {
+  color: #5d3f66;
+}
+
+.QA p {
+  margin-top: 10px;
+  color: #888788;
+}
+
+button {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+  color: #b4345c;
+  font-size: 30px;
 }
